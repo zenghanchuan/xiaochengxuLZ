@@ -1,21 +1,114 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.userinfo-avatar {
-  width: 128rpx;
+ page {
+  background-color: #E0E0E0;
+} 
+.header{
+  width: 100%;
   height: 128rpx;
-  margin: 20rpx;
+  position: relative;
+  background: #FFFFFF;
+  font-size:28rpx;
+  font-family:PingFang-SC-Medium;
+  font-weight:500;
+  color:rgba(39,39,39,1);
+  margin: 67rpx 0 0 29rpx;
+}
+.head{
+  /* height: 425rpx; */
+  position: relative;
+}
+.head img{
+  width: 100%;
+  height: 425rpx;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.nav{
+  position: relative;
+  height: 270rpx;
+  /* border-top: 1px solid #bfbfbf; */
+  width: 100%;
+  margin: 0 0 0 1%;
+  background: white;
+  overflow: hidden;
+}
+.classification{
+  width: 120rpx;
+  height: 120rpx;
   border-radius: 50%;
+  background:#BFBFBF;
+  display: block;
+  float: left;
+  margin: 50rpx 0 0 50rpx;
+  font-size: 30rpx;
+  font-family: PingFang-SC-Bold;
+  font-weight:bold;
+  color:rgba(51,51,51,1);
+  line-height: 300rpx;
+  text-align: center;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.list{
+  width: 100%;
+  background: white;
+  position: relative;
+  margin-top: 30rpx;
 }
-
-.usermotto {
-  margin-top: 200px;
+.list_head{
+  height: 90rpx;
+  width: 720rpx;
+  margin: 0 0 0 30rpx;
+  border-bottom: 1px solid #E0E0E0;
+}
+.nail{
+  position: relative;
+  display: inline-block;
+  width: 6rpx;
+  height: 30rpx;
+  margin: 30rpx 0 0 0;
+  background: #226CE5;
+}
+.list_head text{
+  font-size: 30rpx;
+  font-family:PingFang-SC-Bold;
+  font-weight:bold;
+  color:rgba(51,51,51,1);
+  margin: 31rpx 0 0 29rpx;
+}
+.list_content{
+  width: 720rpx;
+  margin: 0 0 0 30rpx;
+  height: 211rpx;
+  margin-bottom: 50rpx;
+}
+.list_content image{
+  width: 240rpx;
+  height: 180rpx;
+  border-radius: 10rpx;
+  margin: 30rpx 0 0 0;
+  background: #E0E0E0;
+}
+.content{
+  width:418rpx;
+  height:126rpx;
+  font-size:32rpx;
+  font-family:PingFang-SC-Medium;
+  font-weight:500;
+  color:rgba(51,51,51,1);
+  display: block;
+  float: right;
+  margin: 31rpx 31rpx 0 0;
+  line-height:48rpx;
+  letter-spacing:2rpx;
+}
+.time{
+  width:231rpx;
+  height:22rpx;
+  font-size:22rpx;
+  font-family:PingFang-SC-Medium;
+  font-weight:500;
+  color:rgba(153,153,153,1);
+  line-height:48rpx;
+  display: block;
+  /* float: right; */
+  margin: -42rpx 0 0 271rpx;
 }

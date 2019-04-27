@@ -1,13 +1,22 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<!-- <view class='header'><text>成都</text></view> -->
+<view class='head'>
+  <image src='/images/PIC_BANNER.png'></image>
+</view>
+<view class='nav'>
+  <view class='classification'><text></text>分类1</view>
+  <view class='classification'><text></text>分类2</view>
+  <view class='classification'><text></text>分类3</view>
+  <view class='classification'><text></text>分类4</view>
+</view>
+<view class='list'>
+  <view class='list_head'>
+    <view class='nail'></view>
+    <text>热门新闻</text>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class='list_content' wx:for="{{array}}" wx:key="index">
+    <image class='pict' src='{{item.imgUrl}}'></image>
+    <text class='content'>{{item.detail}}</text>
+    <text class='time'>{{item.time}}</text>
   </view>
 </view>

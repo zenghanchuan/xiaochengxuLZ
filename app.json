@@ -1,12 +1,47 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/personal/personal",
+    "pages/shopping/shopping",
+    "pages/appointment/appointment"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "新脉",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#CCCCCC",
+    "borderStyle": "black",
+    "backgroundColor":"#FFFFFF",
+    "selectedColor":"#226CE5",
+    "list": [
+      {
+        "selectedIconPath": "/images/icon_home _h.png",
+        "iconPath": "/images/home.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "/images/appointment.png",
+        "iconPath": "/images/appoint.png",
+        "pagePath": "pages/appointment/appointment",
+        "text": "预约"
+      },
+      {
+        "selectedIconPath": "/images/shopping.png",
+        "iconPath": "/images/shop.png",
+        "pagePath": "pages/shopping/shopping",
+        "text": "商城"
+      },
+      {
+        "selectedIconPath": "/images/personal.png",
+        "iconPath": "/images/icon_gr_n.png",
+        "pagePath": "pages/personal/personal",
+        "text": "个人"
+      }
+    ]
   }
 }
